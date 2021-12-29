@@ -1,0 +1,202 @@
+:root {
+    --color-1: #6B9080;
+    --color-2: #A4C3B2;
+    --color-3: #CCE3DE;
+    --color-4: #EAF4F4;
+    --color-5: #F6FFF8;
+    --color-6: #FF9E00;
+}
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+.grid-page-wrapper {
+    margin: 0 1em;
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "nav-one"
+        "main"
+        "nav-two"
+        "footer";
+    gap: 1rem;
+    grid-template-rows: auto auto 1fr auto auto;
+    min-height: 100vh;
+    /* width: min(95%, 70rem); */
+}
+
+.header {
+    grid-area: header;
+}
+.nav-one {
+    grid-area: nav-one;
+}
+.nav-two {
+    grid-area: nav-two;
+}
+.main {
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.main-one {
+    grid-area: main-one;
+}
+.main-two {
+    grid-area: main-two;
+}
+.main-three {
+    grid-area: main-three;
+}
+.main-four {
+    grid-area: main-four;
+}
+
+/* MISC */
+.u {
+    text-decoration: underline;
+}
+
+.mhvh-100{
+    min-height: 100vh;
+}
+.mhvh-75{
+    min-height: 75vh;
+}
+.mhvh-50{
+    min-height: 50vh;
+}
+.mhvh-25{
+    min-height: 25vh;
+}
+.mwvw-100{
+    min-width: 100vh;
+}
+.mwvw-75{
+    min-width: 75vh;
+}
+.mwvw-50{
+    min-width: 50vh;
+}
+.mwvw-25{
+    min-width: 25vh;
+}
+
+/* buttons */
+.a-tag {
+    color: inherit;
+    text-decoration: none;
+}
+.a-tag:hover {
+    color: var(--color-6);
+}
+button:hover {
+    color: var(--color-6);
+    background-color: var(--color-1);
+}
+
+/* menus */
+.ul-menu-row {
+    display: flex;
+    list-style-type: none;
+}
+.ul-menu-col {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+/* colors */
+.bg-green {
+    background-color: var(--color-1);
+}
+.bg-green-light {
+    background-color: var(--color-2);
+}
+.bg-mint {
+    background-color: var(--color-3);
+}
+.bg-eggshell {
+    background-color: var(--color-5);
+}
+.bg-orange {
+    background-color: var(--color-6);
+}
+.bg-black {
+    background-color: black;
+}
+.bg-white {
+    background-color: white;
+}
+.txt-green {
+    color: var(--color-1);
+}
+.txt-green-light {
+    color: var(--color-2);
+}
+.txt-mint {
+    color: var(--color-3);
+}
+.txt-eggshell {
+    color: var(--color-5);
+}
+.txt-orange {
+    color: var(--color-6);
+}
+.txt-black {
+    color: black;
+}
+.txt-white {
+    color: white;
+}
+.bg-green-hover:hover {
+    background-color: var(--color-1);
+}
+.bg-green-light-hover:hover {
+    background-color: var(--color-2);
+}
+.bg-mint-hover:hover {
+    background-color: var(--color-3);
+}
+.bg-eggshell-hover:hover {
+    background-color: var(--color-5);
+}
+.bg-orange-hover:hover {
+    background-color: var(--color-6);
+}
+.bg-black-hover:hover {
+    background-color: black;
+}
+.bg-white-hover:hover {
+    background-color: white;
+}
+.txt-green-hover:hover {
+    color: var(--color-1);
+}
+.txt-green-light-hover:hover {
+    color: var(--color-2);
+}
+.txt-mint-hover:hover {
+    color: var(--color-3);
+}
+.txt-eggshell-hover:hover {
+    color: var(--color-5);
+}
+.txt-orange-hover:hover {
+    color: var(--color-6);
+}
+.txt-black-hover:hover {
+    color: black;
+}
+.txt-white-hover:hover {
+    color: white;
+}
